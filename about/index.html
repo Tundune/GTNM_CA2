@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-menu">
+            <div class="img-logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="#">Labs</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="body-about">
+        <div class="div-left">
+            <div class="left-img">
+                <img src="/images/user-circle-svgrepo-com (1).svg" alt="">
+            </div>
+            <div class="item-div">
+                <img class="icon-text" src="/images/genders-svgrepo-com (1).svg" alt="">
+                <div>Nam</div>
+            </div>
+            <div class="item-div">
+                <img class="icon-text" src="/images/birthday-cake-svgrepo-com (1).svg" alt="">
+                <div>26/10/2005</div>
+            </div>
+            <div class="item-div">
+                <img class="icon-text" src="/images/mail-pencil-svgrepo-com (1).svg" alt="">
+                <div>mail</div>
+            </div>
+            <div class="item-div">
+                <img class="icon-text" src="/images/phone-call-alt-1-svgrepo-com (1).svg" alt="">
+                <div>002928375</div>
+            </div>
+            <div class="item-div">
+                <img class="icon-text" src="/images/direction-svgrepo-com (1).svg" alt="">
+                <div>Đại học Nông Lâm HCm</div>
+            </div>
+            <div class="line"></div>
+            <div class="skill-div">Ngoại ngữ</div>
+            <div class="item-skill">
+                <div>Tiếng anh</div>
+                <div class="line-2"></div>
+            </div>
+            <div class="item-skill">
+                Tiếng Nhật
+                <div class="line-3"></div>
+            </div>
+            <br><br>
+            <div class="skill-div">Tin học</div>
+            <div class="item-skill">
+                <div>Excel</div>
+                <div class="line-2"></div>
+            </div>
+            <div class="item-skill">
+                Word
+                <div class="line-3"></div>
+            </div>
+        </div>
+        <div class="div-right">
+            <h1>Đặng Tuấn Vũ</h1>
+            <div class="item-right">Sinh Viên</div>
+            <h2>Mục tiêu nghề nghiệp</h2>
+            <div>Với chuyên môn về mạng và phần cứng, năng khiếu kỹ thuật và khả năng quản lý các tác vụ phức tạp, tôi đang tìm kiếm vị trí IT Manager để đưa 5 năm học hỏi và tích lũy kinh nghiệm của mình giúp doanh nghiệp đạt được các mục tiêu chiến lược và xác định các cơ hội triển khai công nghệ mới</div>
+            <h2>Trình độ học vấn</h2>
+            <div>Học đại học Nông Lâm</div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f9fc;
+}
+.body-about {
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.div-left {
+    max-width: 200px;
+    background: #264653;
+    padding: 40px 20px;
+    height: calc(100vh - 90px);
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+.div-left .left-img img {
+    width: 70%;
+    margin: auto;
+}
+.left-img {
+    text-align: center;
+}
+.icon-text {
+    width: 20px;
+}
+.item-div {
+    padding: 5px 0;
+    display: flex;
+    gap: 10px;
+    color: #fff;
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    margin: 10px 0;
+}
+.skill-div {
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.line-2 {
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    margin-top: 5px;
+}
+.line-2::before {
+    content: '';
+    width: 50%;
+    height: 5px;
+    display: block;
+    background: #fff;
+}
+.line-3 {
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    margin-top: 5px;
+}
+.line-3::before {
+    content: '';
+    width: 70%;
+    height: 5px;
+    display: block;
+    background: #fff;
+}
+.item-skill {
+    padding: 10px 0;
+    color: #fff;
+}
+.div-right {
+    width: calc(100% - 200px);
+    padding: 20px 40px;
+}
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.item-right {
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+.div-right h2 {
+    border-bottom: 2px solid;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #222;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 16px;
+}
+.nav-menu {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.img-logo {
+    height: 50px;
+    width: 50px;
+}
+.img-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+</style>
