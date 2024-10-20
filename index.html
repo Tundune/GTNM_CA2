@@ -14,13 +14,15 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f6f9fc;
+            margin: 0;
+            padding: 0;
         }
 
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 5%;
+            padding:0px 50px;
             background-color: #fff;
         }
 
@@ -29,11 +31,10 @@
             font-weight: bold;
             color: #222;
         }
-
         nav ul {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 50px;
         }
 
         nav ul li {
@@ -43,9 +44,21 @@
         nav ul li a {
             text-decoration: none;
             color: #222;
-            font-size: 16px;
+            font-size: 15px;
+            padding: 40px 10px;
         }
-
+        nav ul li a:hover {
+          background: #ddd;
+        }
+        .menu-lab {
+            padding: 40px 10px;
+            list-style: none;
+            display: inline-block;
+            position: relative;
+        }
+        .menu-lab:hover {
+          background: #ddd;
+        }
         .auth-buttons a {
             margin-left: 20px;
             text-decoration: none;
@@ -124,6 +137,7 @@
             display: flex;
             gap: 50px;
             align-items: center;
+            
         }
         .img-logo {
             height: 50px;
@@ -177,6 +191,26 @@
             padding-top: 20px;
             text-align: center;
         }
+        .lab-in-lab {
+            display: none;
+            position: absolute;
+            width: 150px;
+            background: #f1f1f1;
+            padding: 20px;
+            z-index: 1;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            top: 100%;
+            left: -10%;
+        }
+        .menu-lab:hover .lab-in-lab {
+            display: block;
+        }
+        .lab-in-lab a {
+            display: block;
+            padding: 5px 0;
+            text-decoration: none;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -189,9 +223,19 @@
             <ul>
                 <li><a href="./">Home</a></li>
                 <li><a href="./about">About</a></li>
-                <li><a href="./lab">Labs</a></li>
+                
+                <!-- <li><a href="./lab">Labs</a></li> -->
                 
             </ul>
+            <div class="menu-lab">
+                <li>Labs</li>
+                 <div class="lab-in-lab">
+                     <a href="/lab/index.html">Lab 1</a>
+                     <a href="https://tundune.github.io/lab2/">Lab 2</a>
+                     <a href="https://tundune.github.io/Lab3/">Lab 3</a>
+                     <a href="">Lab 4</a>
+                 </div>
+             </div>
         </nav>
         
     </header>
