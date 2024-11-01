@@ -3,265 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab1</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+Elbasan&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+Elbasan&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f6f9fc;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding:0px 50px;
-            background-color: #fff;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #222;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 50px;
-        }
-
-        nav ul li {
-            display: inline;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #222;
-            font-size: 15px;
-            padding: 40px 10px;
-        }
-        nav ul li a:hover {
-          background: #ddd;
-        }
-        .menu-lab {
-            padding: 40px 10px;
-            list-style: none;
-            display: inline-block;
-            position: relative;
-        }
-        .menu-lab:hover {
-          background: #ddd;
-          cursor: pointer;
-        }
-        .auth-buttons a {
-            margin-left: 20px;
-            text-decoration: none;
-            padding: 10px 20px;
-            border: 2px solid #00c1a1;
-            color: #00c1a1;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        .auth-buttons a.signup {
-            background-color: #00c1a1;
-            color: #fff;
-        }
-
-        /* Style for login/signup section */
-        .auth-container {
-            max-width: 500px;
-            margin: 50px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .tab {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-
-        .tab button {
-            background-color: #f6f9fc;
-            border: none;
-            padding: 10px;
-            font-size: 16px;
-            cursor: pointer;
-            outline: none;
-        }
-
-        .tab button.active {
-            border-bottom: 2px solid #00c1a1;
-            font-weight: bold;
-        }
-
-        .form-container {
-            display: none;
-        }
-
-        .form-container.active {
-            display: block;
-        }
-
-        .form-container input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .form-container button {
-            width: 100%;
-            padding: 10px;
-            background-color: #00c1a1;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .form-container button:hover {
-            background-color: #009688;
-        }
-        .nav-menu {
-            display: flex;
-            gap: 50px;
-            align-items: center;
-            
-        }
-        .img-logo {
-            height: 50px;
-            width: 50px;
-        }
-        .img-logo img {
-            width: 100%;
-            height: 100%;
-        }
-        .body-login{
-            width: 400px;
-            margin: auto;
-            background: #fff;
-            margin-top: 100px;
-            padding: 40px;
-            border-radius: 5px;
-            box-shadow: 0 0 4px #ccc;
-        }
-        .input-name {
-            padding-bottom: 30px;
-        }
-        .item-input {
-            display: flex;
-            gap: 5px;
-            border-bottom: 1px solid #333;
-            padding-top: 5px;
-        }
-        .font-login {
-            font-size: 30px;
-            font-weight: bold;
-            text-align: center;
-            padding-bottom: 20px;
-        }
-        .input-name input {
-            height: 30px;
-            width: calc(100% - 10px);
-            border: none;
-            padding: 0 5px;
-        }
-        .btn-login {
-            height: 40px;
-            border: none;
-            font-size: 18px;
-            width: 100%;
-            border-radius: 20px;
-            background: linear-gradient(to right, #0000CD, #FF4500);
-            margin-top: 20px;
-            color: #fff;
-        }
-        .register {
-            padding-top: 20px;
-            text-align: center;
-        }
-        .lab-in-lab {
-            display: none;
-            position: absolute;
-            width: 150px;
-            background: #f1f1f1;
-            padding: 20px;
-            z-index: 1;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            top: 100%;
-            left: -10%;
-        }
-        .menu-lab:hover .lab-in-lab {
-            display: block;
-        }
-        .lab-in-lab a {
-            display: block;
-            padding: 5px 0;
-            text-decoration: none;
-            color: #333;
-        }
-    </style>
-</head>
 <body>
-
-    <header>
-        <nav class="nav-menu">
-            <div class="img-logo">
-                <img src="./images/logo.png" alt="">
-            </div>
-            <ul>
-                <li><a href="./">Home</a></li>
-                <li><a href="./about">About</a></li>
-                
-                <!-- <li><a href="./lab">Labs</a></li> -->
-                
-            </ul>
-            <div class="menu-lab">
-                <li>Labs</li>
-                 <div class="lab-in-lab">
-                     <a href="./lab/index.html">Lab 1</a>
-                     <a href="https://tundune.github.io/lab2/lab2/">Lab 2</a>
-                     <a href="https://tundune.github.io/Lab3/">Lab 3</a>
-                     <a href="https://tundune.github.io/lab4/">Lab 4</a>
-                     <a href="https://tundune.github.io/Lab5/">Lab 5</a>
-                 </div>
-             </div>
-        </nav>
-        
+<div class="cover-all">
+    <header class="header-home">
+        <img src="./img/logo3.png" alt="">
+        <ul class="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="./about/index.html"><li>About</li></a>
+            <a href="./lab/index.html"><li>Lab 1</li></a>
+            <a href="https://tundune.github.io/lab2/lab2/"><li>Lab 2</li></a>
+            <a href="https://tundune.github.io/Lab3/"><li>Lab 3</li></a>
+            <a href="https://tundune.github.io/lab4/"><li>Lab 4</li></a>
+            <a href="https://tundune.github.io/Lab5/"><li>Lab 5</li></a>
+        </ul>
     </header>
-    <div>
-        <div class="body-login">
-            <div class="font-login">Login</div>
-            <div class="input-name">
-                <div>User name</div>
-                <div class="item-input">
-                    <img src="./images/user.svg" alt="">
-                    <input type="text">
+    <section class="center">
+        <div class="right-body">
+            <p>Human Computer Interaction</p>
+            <div class="under-right">
+                <h1>Don't have an account?</h1>
+                <span>
+                Register to access all the features of our services.<br>
+                Manage your business in one place. It's free
+                </span>
+                <div class="icon">
+                    <a href=""><img src="./img/fb-messenger-svgrepo-com.svg" alt=""></a>
+                    <a href=""><img src="./img/github-142-svgrepo-com.svg" alt=""></a>
+                    <a href=""><img src="./img/logo-google-svgrepo-com.svg" alt=""></a>
+                    <a href=""><img src="./img/twitter-3-logo-svgrepo-com.svg" alt=""></a>
                 </div>
             </div>
-            <div class="input-name">
-                <div>Password</div>
-                <div class="item-input">
-                    <img src="./images/lock.svg" alt="">
-                    <input type="text">
-                </div>
-            </div>
-            <button class="btn-login">Login</button>
-            <div class="register">Register an account <a href="/register">here</a></div>
         </div>
-    </div>
+        <div class="left-body">
+            <div class="sign-up">
+                <p class="text-signup">Sign up</p>
+                <div class="cover-signup">
+                    <div class="user">
+                        <p>Username</p>
+                        <div class="input">
+                            <img src="./img/user - Copy.svg" alt=""><input type="text">
+                        </div>
+                        <p>Password</p>
+                        <div class="input">
+                            <img src="./img/lock.svg" alt=""><input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="statement">
+                        <input type="checkbox">I agree to the all statement in <a href=""> Terms of service</a>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>Sign up <img src="./img/right-arrow-backup-2-svgrepo-com.svg" alt=""></button>
+                    <a href="">Have an account?</a>
+                </div>
 
+            </div>
+        </div>
+    </section>
+</div>
 </body>
 </html>
