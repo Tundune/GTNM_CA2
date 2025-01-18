@@ -64,6 +64,7 @@ body {
     padding: 0 60px;
     font-size: 20px;
     font-weight: bold;
+    padding-bottom:20px;
 }
 .menu-working {
     display: flex;
