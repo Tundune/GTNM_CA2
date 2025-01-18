@@ -100,3 +100,26 @@ body {
     align-items: center;
     gap: 20px;
 }
+
+.container-footer {
+    background: #cccccc73;
+    padding: 20px 80px
+}
+.newsletter {
+    display: flex;
+  }
+  .newsletter input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .newsletter button {
+    width: 20%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
